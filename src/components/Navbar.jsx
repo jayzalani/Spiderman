@@ -13,7 +13,6 @@ const NavBar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
 
-  // Refs for audio and navigation container
   const audioElementRef = useRef(null);
   const navContainerRef = useRef(null);
  
@@ -47,7 +46,6 @@ const NavBar = () => {
       setIsNavVisible(false);
       navContainerRef.current.classList.add("floating-nav");
     } else if (currentScrollY < lastScrollY) {
-      // Scrolling up: show navbar with floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.add("floating-nav");
     }
@@ -74,9 +72,9 @@ const NavBar = () => {
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
-          {/* Logo and Product button */}
+         
           <div className="flex items-center gap-7">
-            <img src="/img/spiderman.svg" alt="logo" className="w-10" />
+            <img src="img/spiderman.svg" alt="logo" className="w-10" />
 
             <Button
             onClick={() => handleExternalRedirect("https://www.redwolf.in/?tracking=67c4a1c040fae")}
@@ -108,7 +106,7 @@ const NavBar = () => {
               <audio
                 ref={audioElementRef}
                 className="hidden"
-                src="/audio/loop.mp3"
+                src="audio/loop.mp3"
                 loop
               />
               {[1, 2, 3, 4].map((bar) => (

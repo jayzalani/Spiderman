@@ -10,7 +10,7 @@ const Contact = () => {
     <div id="contact" className="my-20 min-h-96 w-screen px-10">
       <div 
         className="relative rounded-lg py-24 text-blue-50 sm:overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: "url('/img/Spiderman.jpg')" }}
+        style={{ backgroundImage: "url('img/Spiderman.jpg')" }}
       >
         <div className="flex flex-col items-center text-center">
           <p className="mb-10 font-general text-[10px] uppercase">
