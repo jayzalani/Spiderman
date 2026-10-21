@@ -88,7 +88,7 @@ const Hero = () => {
     // window.location.href = url; // Opens in the same tab
   };
 
-  const getvideoSrouce = (index) => `public/videos/hero-${index}.mp4`;
+  const getvideoSrouce = (index) => `/videos/hero-${index}.mp4`;
 
   return (
     <div id="home" className ="relative h-dvh w-screen overflow-x-hidden">
