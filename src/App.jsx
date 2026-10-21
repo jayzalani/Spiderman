@@ -3,7 +3,7 @@ import Hero from './components/Hero.jsx'
 import Navbar from './components/Navbar.jsx'
 import FloatingImage from './components/Story.jsx'
 import Contact from './components/Contact.jsx'
-import SpidermanFooter from './components/SpidermanFooter.jsx'
+import SpidermanFooter from './components/Spidermanfooter.jsx'
  
 const App = () => {
   return (
